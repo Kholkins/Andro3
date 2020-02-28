@@ -1,10 +1,12 @@
-package com.example.andro3;
+package com.example.andro3.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.example.andro3.R;
 
 import java.util.ArrayList;
 import java.util.List;
