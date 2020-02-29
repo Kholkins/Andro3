@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Andro3</string>
+    <string name="item_settgs">Настройки</string>
+    <string name="item_about">Об Авторе</string>
+    <string name="item_site">Оф. сайт</string>
+
 </resources>

@@ -3,6 +3,7 @@ package com.example.andro3.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -30,6 +31,12 @@ public class MainActivity extends AppCompatActivity {
 
         PhoneModelAdapter adapter = new PhoneModelAdapter(this, initData());
         listV.setAdapter(adapter);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_items, menu);
+        return true;
     }
 
     private List<PhoneModel> initData () {
