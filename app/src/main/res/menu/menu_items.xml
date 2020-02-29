@@ -17,5 +17,5 @@
         android:id="@+id/site"
         android:orderInCategory="3"
         android:title="@string/item_site"
-        app:showAsAction="never" />
+        app:showAsAction="collapseActionView" />
 </menu>
