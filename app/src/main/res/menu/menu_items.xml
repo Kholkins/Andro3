@@ -9,6 +9,7 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/about"
+        android:onClick="onAbout"
         android:orderInCategory="2"
         android:title="@string/item_about"
         app:showAsAction="never" />

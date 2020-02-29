@@ -1,11 +1,14 @@
 package com.example.andro3.activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.andro3.R;
 import com.example.andro3.adapter.PhoneModelAdapter;
@@ -37,6 +40,31 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_items, menu);
         return true;
+    }
+
+    public void onAbout(MenuItem item){
+        Toast.makeText(this,"Об авторе", Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()){
+            case R.id.settings:
+                Toast.makeText(this,"Выбраны настройки", Toast.LENGTH_SHORT).show();
+                return true;
+
+/*            case R.id.about:
+                Toast.makeText(this,"Выбраны Об авторе", Toast.LENGTH_SHORT).show();
+                return true;*/
+
+            case R.id.site:
+                Toast.makeText(this,"Выбран сайт", Toast.LENGTH_SHORT).show();
+                return true;
+
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     private List<PhoneModel> initData () {
