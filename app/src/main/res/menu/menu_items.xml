@@ -12,7 +12,7 @@
         android:onClick="onAbout"
         android:orderInCategory="2"
         android:title="@string/item_about"
-        app:showAsAction="never" />
+        app:showAsAction="always" />
     <item
         android:id="@+id/site"
         android:orderInCategory="3"
