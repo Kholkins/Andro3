@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new PhoneModel(2,"ZTE",1060));
         list.add(new PhoneModel(3,"Xiaomi",6000));
         list.add(new PhoneModel(4,"LG",56000));
-        list.add(new PhoneModel(5,"LG",7000));
+        list.add(new PhoneModel(5,"Motorola",7000));
 
         return list;
     }
